@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./conStyle.css">
+</head>
+<body>
+    <!-- ------------------------Nav----------------------------- -->
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <ul class="nav">
+            <li class="navlink"><a href="/index.html">Home</a></li>
+            <li class="navlink"><a href="/assets/about/about.html" target="_blank">About</a></li>
+            <li class="navlink"><a href="/assets/conectus/conect.html" target="_blank">Contact US</a></li>
+        </ul>
+        <div class="burger"><i class="fas fa-bars"></i></div>
+    </header>
+    <!-- --------------------Contact Us-------------------------- -->
+    <main>
+        <div class="container">
+            <form name="contactForm"  >
+                <h2>Contact US</h2>
+                <div class="row">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="ex: Mahmoud Saied Masoud" id="name">
+                    <div class="error" id="nameErr"></div>
+                </div>
+                <div class="row">
+                    <label>Email Address</label>
+                    <input type="text" name="email" placeholder="ex: mahmoud@ourearth.com" id="mail">
+                    <div class="error" id="emailErr"></div>
+                </div>
+                <div class="row">
+                    <label>Mobile Number</label>
+                    <input type="text" name="mobile" placeholder="ex: 01511223303" id="mobile">
+                    <div class="error" id="mobileErr"></div>
+                </div>
+                <div class="row">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="message" rows="4" cols="68" id="message"></textarea>
+                    <div class="error" id="messageErr"></div>
+                </div>
+                 
+                <div class="row submit">
+                    <input type="button" value="Contact US" onclick="validateForm()">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        <div  class="footer">    
+            <p >
+              <a href="#">© Copyright 2022</a>
+              <p>&nbsp;•&nbsp;</p>
+              <p>Contact</p>
+              <p>&nbsp;•&nbsp;</p>
+              <p>About</p>
+            </p>
+        </div>
+    </main>
+
+    <button class="scrollToTopBtn">TOP</button>
+
+    
+    <!-- --------------------footer -------------------------- -->
+    
+    <script src="conect.js"></script>
+</body>
+</html>

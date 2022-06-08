@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGO</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- ---------------- Nav ------------------ -->
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <ul class="nav">
+            <li class="navlink"><a href="#">Home</a></li>
+            <li class="navlink"><a href="./assets/about/about.html" target="_blank">About</a></li>
+            <li class="navlink"><a href="./assets/conectus/conect.html" target="_blank">Contact US</a></li>
+        </ul>
+        <div class="burger"><i class="fas fa-bars"></i></div>
+    </header>
+    <!-- ------------------Main content ------------------- -->
+    <main>
+        <!-- -------------slider------------------ -->
+        <section>
+            <div class="homepage-hero-slider gallery">
+                <div class="photos " >
+                    <div class="slide block activeGallery" style="background: url(/assets/slider/im1.jpg) no-repeat center center; background-size: cover;">
+                        <p class="caption activeGallery">The first slide.<br><small>This is an awesome.</small></p>
+                    </div>
+                    <div class="slide block" style="background: url(/assets/slider/im2.jpg) no-repeat center center; background-size: cover;">
+                        <p class="caption ">The second slide.<br><small>This is an awesome.</small></p>
+                    </div>
+                    <div class="slide block" style="background: url(/assets/slider/im3.jpg) no-repeat center center; background-size: cover;">
+                        <p class="caption ">The 3th slide.<br><small>This is an awesome.</small></p>
+                    </div>
+                    <div class="slide block" style="background: url(/assets/slider/im4.jpg) no-repeat center center; background-size: cover;">
+                        <p class="caption ">The 4th slide.<br><small>This is an awesome.</small></p>
+                    </div>
+            </div>
+                <div class="buttons">
+                    <a class="prev" href="#"><i class="fas fa-fw fa-arrow-left"></i></a>
+                    <a class="next" href="#"><i class="fas fa-fw fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------filter------------------ -->
+        <section>
+            <div class="categories">
+                <h1>News Categories</h1>
+                <p>see new products to :Discover long lasting, meaningful and functional products. </p>
+            </div>
+            <div id="buttons">
+                <button class="button-value" onclick="filterProduct('all')">All</button>
+                <button class="button-value" onclick="filterProduct('Phones')">Phones</button>
+                <button class="button-value" onclick="filterProduct('Makeups')">Makeups</button>
+                <button class="button-value" onclick="filterProduct('Clothes')">Clothes</button>
+                <button class="button-value" onclick="filterProduct('Cars')">Cars</button>
+              </div>
+              <div id="products"></div>
+            </div>
+        </section>
+
+        <button class="scrollToTopBtn">TOP</button>
+    </main>
+    <!-- ------------------footer ------------------- -->
+    <footer  class="footer">    
+            <p>
+              <a href="#">© Copyright 2022</a>
+              <p>&nbsp;•&nbsp;</p>
+              <p>Contact</p>
+              <p>&nbsp;•&nbsp;</p>
+              <p>About</p>
+            </p>
+    </footer>
+    <!-- custom JS-->
+    <script src="./index.js"></script>
+</body>
+
+</html>
